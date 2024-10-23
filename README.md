@@ -40,7 +40,7 @@ Microservices Overview
 
 
 1. User Service
-2. 
+   
 Responsible for user management and authentication.
 
 Key Components:
