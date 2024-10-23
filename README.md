@@ -104,7 +104,7 @@ Event Streaming:
 Kafka
 
 Data Flow:
-![image](https://github.com/user-attachments/assets/c466b5b8-e014-44aa-b913-8db0aeda1d46)
+<img width="482" alt="image" src="https://github.com/user-attachments/assets/9e1150ac-add1-4b34-83e5-608792692f52">
 
 
 
