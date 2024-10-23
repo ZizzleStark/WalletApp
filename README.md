@@ -6,9 +6,10 @@ Overview
 The E-Wallet Application is a microservices-based system designed to provide digital wallet functionality. It allows users to manage their accounts, perform transactions, and receive notifications. The application is built using Spring Boot and follows a microservices architecture for scalability and maintainability.
 
 System Architecture
-The application consists of four main microservices:
+
 ![Architecture](https://github.com/user-attachments/assets/61a121da-9f03-4e84-b1a1-5d5d99c8905a)
 
+The application consists of four main microservices:
 
 User Service: Manages user accounts and authentication.
 Wallet Service: Handles user wallets and balances.
