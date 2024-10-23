@@ -106,12 +106,23 @@ Notification Service consumes the event and sends notifications.
 
 API Documentation
 User Service APIs
+
+
 POST /user/create: Create a new user
+
 GET /user/profile-info: Get user profile information
+
 GET /user/username/{username}: Get user details by username
+
 Wallet Service APIs
+
+
 POST /wallet/update: Update wallet balance
+
+
 Transaction Service APIs
+
+
 POST /transaction/initiate: Initiate a new transaction
 
 
