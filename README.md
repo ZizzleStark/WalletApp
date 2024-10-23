@@ -11,15 +11,17 @@ System Architecture
 
 The application consists of four main microservices:
 
-User Service: Manages user accounts and authentication.
+1) User Service: Manages user accounts and authentication.
 
-Wallet Service: Handles user wallets and balances.
+2) Wallet Service: Handles user wallets and balances.
 
-Transaction Service: Manages money transfers between wallets.
+3) Transaction Service: Manages money transfers between wallets.
 
-Notification Service: Sends notifications to users based on system events.
+4) Notification Service: Sends notifications to users based on system events.
 
 These services communicate with each other via RESTful APIs and use Apache Kafka for event-driven communication.
+
+
 
 Technology Stack
 Java: 17
@@ -32,8 +34,13 @@ Apache Kafka
 Maven
 
 
+
+
 Microservices Overview
+
+
 1. User Service
+2. 
 Responsible for user management and authentication.
 
 Key Components:
@@ -51,6 +58,7 @@ Redis for caching
 
 
 2. Wallet Service
+
 Manages user wallets and balances.
 
 Key Components:
@@ -65,6 +73,7 @@ PostgreSQL
 
 
 3. Transaction Service
+   
 Handles money transfers between wallets.
 
 Key Components:
@@ -74,6 +83,7 @@ TransactionService: Implements business logic for transactions
 Transaction: Entity representing transaction data
 TransactionDao: Interface for database operations
 KafkaConfig: Configures Kafka for event publishing
+
 Database:
 
 PostgreSQL
@@ -93,19 +103,9 @@ KafkaConfig: Configures Kafka for consuming events
 Event Streaming:
 Kafka
 
+Data Flow:
+![image](https://github.com/user-attachments/assets/27c52196-d2cb-4a45-bd9b-cf644c83a768)
 
-Data Flow
-User Registration ->
-User Service receives a registration request. ->
-Creates user in PostgreSQL. ->
-Publishes user creation event to Kafka. ->
-Wallet Service listens to the event and creates a wallet for the user. ->
-Transaction Process ->
-Transaction Service receives a transaction request. ->
-Validates the transaction and updates wallet balances via Wallet Service. ->
-Records transaction in PostgreSQL. ->
-Publishes transaction event to Kafka. ->
-Notification Service consumes the event and sends notifications.
 
 
 
