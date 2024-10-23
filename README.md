@@ -12,9 +12,13 @@ System Architecture
 The application consists of four main microservices:
 
 User Service: Manages user accounts and authentication.
+
 Wallet Service: Handles user wallets and balances.
+
 Transaction Service: Manages money transfers between wallets.
+
 Notification Service: Sends notifications to users based on system events.
+
 These services communicate with each other via RESTful APIs and use Apache Kafka for event-driven communication.
 
 Technology Stack
